@@ -1,0 +1,67 @@
+
+
+{% extends "layout.html" %}
+
+{% block content %}
+<section class="mb-4 p-3 my__container">
+
+
+    <h2 class="h1-responsive font-weight-bold text-center my-4 ff__patrick_hand dark__color" style="letter-spacing: 1px;">Susisiekite</h2>
+
+    <p class="text-center w-responsive mx-auto mb-5 ff__patrick_hand dark__color" style="font-size:18px;letter-spacing: 1px;">Ar jūs turite klausimų? Jei taip parašykite ir mūsų komanda su jumis susisieks.</p>
+
+
+        
+        <div class="mb-5 card p-5">
+            <form id="contact-form" action="" method="POST">
+
+             
+                <div class="row">
+
+                    <
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <label for="name" class="mb-2 text_patrick_style  dark__color">Vardas</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                    </div>
+                    
+
+                    div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <label for="email" class="mb-2 text_patrick_style  dark__color">El. paštas</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                    </div>
+                    
+
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <label for="subject" class="mb-2 mt-2 text_patrick_style  dark__color">Kategorija</label>
+                            <input type="text" id="subject" name="subject" class="form-control" required>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+
+                   
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <label for="message" class="mb-2 mt-2 text_patrick_style  dark__color">Žinutė</label>
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea mb-4" required></textarea>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <input type="submit" class="btn mt-2 sign_in_btn mb-4 dark__color" value="SIŲSTI">
+            </form>
+
+            <div class="status"></div>
+</section>
+{% endblock %}
